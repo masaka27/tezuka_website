@@ -1,0 +1,26 @@
+@mixin bg-img($size: cover, $repeat: no-repeat, $position: center center) {
+  background: {
+    size: $size;
+    repeat: $repeat;
+    position: $position;
+  }
+}
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}
