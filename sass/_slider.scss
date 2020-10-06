@@ -43,8 +43,10 @@
     }
   }
   .history-left {
-    position: relative;
-    flex: 0 1 30%;
+    // position: relative;
+    // flex: 0 1 30%;
+    // height: 30vh;
+    z-index: 5;
   }
 }
 .swiper-container .swiper-slide {

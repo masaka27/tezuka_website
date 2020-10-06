@@ -73,3 +73,14 @@ $(document).ready(function () {
     },
   });
 });
+
+
+
+//TOPへ戻るボタン
+(function ($) {
+  const pagetop = $('#pageTop');
+  pagetop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+    return false;
+  });
+})(jQuery);

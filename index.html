@@ -7,6 +7,7 @@
   <title>手塚商事</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
@@ -44,19 +45,33 @@
         </h2>
       </div>
       <div class="map-wrapper">
-        <div class="map-inner"></div>
+        <div class="map-inner">
+          <div class="map__dot">
+            <ul>
+              <li>Nagasaki</li>
+              <li>Kagoshima</li>
+              <li>Okinawa</li>
+              <li>Saga</li>
+              <li>Fukuoka</li>
+              <li>Miyazaki</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </div>
+  <div class="triangle-base triangle-lr"></div>
   <div class="contents container">
     <section class="section section1">
       <h2 class="text-lr font-min">より良い商品を<br>より早く<br>ローコストで。</h2>
     </section>
+
+    
     <section class="section section2">
       <div class="section2__inner">
-        <h2 class="section__title">取り扱い商品</h2>
+        <h2 class="section__title section__title-white">取り扱い商品<span>products</span></h2>
       </div>
-      <ul class="top__select">
+      <ul class="top__select__wrapper">
         <li class="top__select__inner">
           <ul class="top__select top__select1">
             <li><a href=""><span>家庭用品</span></a></li>
@@ -77,12 +92,14 @@
         </li>
       </ul>
     </section>
-
   </div>
+
+
   <!-- <div class="bg-back"></div> -->
 
-  <div class="slider-history-wrap bg-back">
-    <div class="slider-history">
+  <div class="slider-history-wrap bg-back triangle-base">
+    <div class="text-bg font-en"></div>
+    <div class="slider-history d-none">
       <div class="swiper-container">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -98,17 +115,25 @@
         <!-- <div class="elements"></div> -->
       </div>
     </div>
-    <div class="history-left">
-      <h2 class="history__title text-lr font-min">明治<span class="text-combine">33</span>年創業。<br>地域密着の<br><span
-          class="font-big">信頼</span>と<span class="font-big">実績</span>。</h2>
+    <h2 class="history__title text-lr font-min">明治<span class="text-combine">33</span>年創業。<br>地域密着の<br><span
+        class="font-big">信頼</span>と<span class="font-big">実績</span>。</h2>
+
+    <h2 class="history__title history__title-lr font-min"><span class="font-big-more">100</span>年企業を目指して</h2>
+
+    <div class="history__bg__container">
+      <div class="history__bg-1"></div>
+      <div class="history__bg-2 d-none"></div>
+      <div class="history__bg-3"></div>
+      <div class="history__bg-4"></div>
     </div>
+
   </div>
 
 
 
   <section class="section section3">
     <div class="section3_inner section3_inner2">
-      <h2 class="section__title">企業情報</h2>
+      <h2 class="section__title section__title-white">企業情報<span>about</span></h2>
     </div>
 
 
@@ -129,11 +154,13 @@
   <!-- infomation start-->
   <section class="section section4">
     <div class="section4__inner container">
-      <h2 class="section__title">お知らせ</h2>
+      <div class="section__title__wrapper">
+        <h2 class="section__title">お知らせ<span>information</span></h2>
+      </div>
       <ul class="info_container">
         <li class="info">
           <a href="">
-            <div class="info__img"><img src="http://placehold.jp/16/cccccc/ffffff/150x100.png?text=information" alt="">
+            <div class="info__img hover-gradation"><img src="http://placehold.jp/16/cccccc/ffffff/150x100.png?text=information" alt="">
             </div>
             <p class="info__date">2020.10.7</p>
             <p class="info__title">ダミー。ホームページニューアルのお知らせ</p>
@@ -141,7 +168,7 @@
         </li>
         <li class="info">
           <a href="">
-            <div class="info__img"><img src="http://placehold.jp/16/cccccc/ffffff/150x100.png?text=information" alt="">
+            <div class="info__img hover-gradation"><img src="http://placehold.jp/16/cccccc/ffffff/150x100.png?text=information" alt="">
             </div>
             <p class="info__date">2020.8.31</p>
             <p class="info__title">ダミー。インフルエンザ対策グッズ発売のお知らせ</p>
@@ -149,7 +176,7 @@
         </li>
         <li class="info">
           <a href="">
-            <div class="info__img"><img src="http://placehold.jp/16/cccccc/ffffff/150x100.png?text=information" alt="">
+            <div class="info__img hover-gradation"><img src="http://placehold.jp/16/cccccc/ffffff/150x100.png?text=information" alt="">
             </div>
             <p class="info__date">2020.8.31</p>
             <p class="info__title">ダミー。ホームページリニューアルのお知らせ</p>
@@ -161,11 +188,80 @@
   </section>
   <!-- infomation end-->
 
+
+<div class="cvBtn__container d-none">
+<!-- contact start -->
+<div class="cvBtn">
+	<ul class="cvBtn__list">
+		<li class="cvBtn__item">
+			<a href="#" class="cvBtn__inner">
+				<span class="cvBtn__desc">&#12513;&#12540;&#12523;&#12510;&#12460;&#12472;&#12531;&#65295;WEB&#12510;&#12460;&#12472;&#12531;</span>
+				<p class="cvBtn__title">Mail Magazine</p>
+				<p class="cvBtn__summary">&#36914;&#21270;&#12375;&#32154;&#12369;&#12427;&#26989;&#30028;&#21205;&#21521;&#12363;&#12425;&#25216;&#34899;&#12467;&#12521;&#12512;&#12394;&#12393;<br>&#12479;&#12452;&#12512;&#12522;&#12540;&#12394;&#24773;&#22577;&#12434;&#12362;&#23626;&#12369;&#12375;&#12414;&#12377;&#12290;</p>
+				<p class="cvBtn__more">
+					<span class="more -btn -arw -s -alpha">
+						<span class="line -none -white">&#36092;&#35501;&#12399;&#12371;&#12385;&#12425;&#12363;&#12425;</span>
+						<span class="more__icn"></span>
+					</span>
+				</p>
+			</a>
+		</li>
+		<li class="cvBtn__item">
+			<a href="" class="cvBtn__inner">
+				<span class="cvBtn__desc">&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;</span>
+				<p class="cvBtn__title">Contact Us</p>
+				<p class="cvBtn__summary">&#12362;&#35211;&#31309;&#12418;&#12426;&#20381;&#38972;&#12420; &#35443;&#12375;&#12356;&#12372;&#30456;&#35527;&#12434;&#12373;&#12428;&#12383;&#12356;&#22580;&#21512;&#12395;&#12399;<br>&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;&#12501;&#12457;&#12540;&#12512;&#12434;&#12372;&#27963;&#29992;&#12367;&#12384;&#12373;&#12356;&#12290;</p>
+				<p class="cvBtn__more">
+					<span class="more -btn -arw -s -alpha">
+							<span class="line -none -white">&#21839;&#12356;&#21512;&#12431;&#12379;&#12377;&#12427;</span>
+						<span class="more__icn"></span>
+					</span>
+				</p>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- contact end -->
+
+<!-- recluit start -->
+<div class="cvBtn">
+	<ul class="cvBtn__list flex-reverse">
+		<li class="cvBtn__item">
+			<a href="" class="cvBtn__inner">
+				<span class="cvBtn__desc">&#12513;&#12540;&#12523;&#12510;&#12460;&#12472;&#12531;&#65295;WEB&#12510;&#12460;&#12472;&#12531;</span>
+				<p class="cvBtn__title">Mail Magazine</p>
+				<p class="cvBtn__summary">&#36914;&#21270;&#12375;&#32154;&#12369;&#12427;&#26989;&#30028;&#21205;&#21521;&#12363;&#12425;&#25216;&#34899;&#12467;&#12521;&#12512;&#12394;&#12393;<br>&#12479;&#12452;&#12512;&#12522;&#12540;&#12394;&#24773;&#22577;&#12434;&#12362;&#23626;&#12369;&#12375;&#12414;&#12377;&#12290;</p>
+				<p class="cvBtn__more">
+					<span class="more -btn -arw -s -alpha">
+						<span class="line -none -white">&#36092;&#35501;&#12399;&#12371;&#12385;&#12425;&#12363;&#12425;</span>
+						<span class="more__icn"></span>
+					</span>
+				</p>
+			</a>
+		</li>
+		<li class="cvBtn__item">
+			<a href="" class="cvBtn__inner">
+				<span class="cvBtn__desc">&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;</span>
+				<p class="cvBtn__title">Contact Us</p>
+				<p class="cvBtn__summary">&#12362;&#35211;&#31309;&#12418;&#12426;&#20381;&#38972;&#12420; &#35443;&#12375;&#12356;&#12372;&#30456;&#35527;&#12434;&#12373;&#12428;&#12383;&#12356;&#22580;&#21512;&#12395;&#12399;<br>&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;&#12501;&#12457;&#12540;&#12512;&#12434;&#12372;&#27963;&#29992;&#12367;&#12384;&#12373;&#12356;&#12290;</p>
+				<p class="cvBtn__more">
+					<span class="more -btn -arw -s -alpha">
+							<span class="line -none -white">&#21839;&#12356;&#21512;&#12431;&#12379;&#12377;&#12427;</span>
+						<span class="more__icn"></span>
+					</span>
+				</p>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- recluit end -->
+</div>
+
   <!-- banner start -->
   <section class="section section5">
     <div class="section5__inner container">
       <a href="#">
-        <span>採用情報</span>
+        <span>採用情報<br><span class="span-small">recruite</span></span>
       </a>
     </div>
   </section>
@@ -173,14 +269,17 @@
 
   <footer class="footer">
     <div class="footer__top__inner">
+      <div id="pageTop" class="scroll">
+        <a href="#">BACK TO TOP</a>
+      </div>
       <div class="footer__nav">
         <ul>
-          <li><a href="#">事業内容</a></li>
-          <li><a href="#">取り扱いメーカー</a></li>
-          <li><a href="#">企業情報</a></li>
-          <li><a href="#">採用情報</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-          <li><a href="#">個人情報保護方針</a></li>
+          <li><a href="#" class="hover-bottom">事業内容</a></li>
+          <li><a href="#" class="hover-bottom">取り扱いメーカー</a></li>
+          <li><a href="#" class="hover-bottom">企業情報</a></li>
+          <li><a href="#" class="hover-bottom">採用情報</a></li>
+          <li><a href="#" class="hover-bottom">お問い合わせ</a></li>
+          <li><a href="#" class="hover-bottom">個人情報保護方針</a></li>
         </ul>
       </div>
     </div>

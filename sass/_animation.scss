@@ -1,0 +1,35 @@
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}
+
+
+@keyframes dotanim {
+  0% {
+      transform: scale(0);
+  }
+  40% {
+      transform: scale(1);
+  }
+  80% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(0);
+  }
+}

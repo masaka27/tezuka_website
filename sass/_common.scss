@@ -7,6 +7,9 @@ $green-color2: #00af46;
 $bg-gradient1: #00abb3;
 $bg-gradient2: #00c850;
 $dark-green: #194e02;
+$btn-f-color:#cfd0ca;
+$color-red: #b50303;
+
 @mixin gradient-green {
   background-color: $bg-gradient2;
   background-image: linear-gradient(
@@ -37,6 +40,7 @@ html {
     line-height: 1.5;
     text-align: left;
     color: $base-color;
+    overflow-x: hidden;
   }
 }
 a {
@@ -54,4 +58,32 @@ $imgDir: '../images/';
 }
 .font-big {
   font-size: 10rem;
+}
+.font-big-more {
+  font-size: 15rem;
+}
+
+.hover-bottom {
+  position: relative;
+  &:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  &::after {
+    background-color: #fff;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -2px;
+    // transform: translateX(-50%);
+    height: 1px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    transform: scaleX(0);
+    z-index: 1;
+  }
+}
+.d-none {
+  display: none !important;
 }

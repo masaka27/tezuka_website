@@ -1,0 +1,577 @@
+
+  // a {
+  //   position: relative;
+  //   outline: 0;
+  //   color: #1a1a1a;
+  //   text-decoration: none;
+  //   -webkit-touch-callout: none;
+  // }
+
+  // a:hover {
+  //   text-decoration: none;
+  // }
+
+  // :focus {
+  //   outline: 0;
+  // }
+
+  // ul {
+  //   list-style: none;
+  // }
+
+  // li {
+  //   position: relative;
+  // }
+
+  // *,
+  // ::after,
+  // ::before {
+  //   -webkit-box-sizing: inherit;
+  //   box-sizing: inherit;
+  //   background-repeat: no-repeat;
+  // }
+
+  // ::after,
+  // ::before {
+  //   vertical-align: inherit;
+  //   text-decoration: inherit;
+  // }
+
+  // * {
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  div.aside {
+    display: block;
+  }
+
+  // a {
+  //   background-color: transparent;
+  //   -webkit-text-decoration-skip: objects;
+  // }
+
+  // a:active,
+  // a:hover {
+  //   outline-width: 0;
+  // }
+
+  // ::-moz-selection {
+  //   background-color: #b3d4fc;
+  //   color: #000;
+  //   text-shadow: none;
+  // }
+
+  // ::selection {
+  //   background-color: #b3d4fc;
+  //   color: #000;
+  //   text-shadow: none;
+  // }
+
+  .more.-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+  }
+
+  .more.-btn span {
+    vertical-align: middle;
+  }
+
+  .more {
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+
+  .more.-btn {
+    border: 1px solid #e6edf1;
+    border-radius: 50px;
+    background: #f5f9fa;
+    font-weight: 700;
+  }
+
+  .more.-alpha {
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+  }
+
+  .more.-arw span:first-child {
+    margin-left: 4px;
+  }
+
+  .more.-arw span:first-child {
+    margin-top: -1px;
+    line-height: 1.3;
+  }
+
+  .more.-s {
+    padding: 0 1.23077em;
+    height: 3.07692em;
+  }
+
+  .more.-s span {
+    font-size: 1.2rem;
+  }
+
+  .more__icn {
+    position: relative;
+    right: 1px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  .-arw .more__icn {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ed338f;
+    -ms-border-radius: 50%;
+  }
+
+  .more__icn:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.shinkawa.co.jp/top/assets/img/arw.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .-arw .more__icn:after {
+    background-image: url(https://www.shinkawa.co.jp/top/assets/img/arw-w.svg);
+  }
+
+  .line {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  .line:after,
+  .line:before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(26, 26, 26, .7);
+    content: "";
+  }
+
+  .line:before {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .line:after {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .line.-none:before {
+    width: 0;
+    -webkit-transition: all .5s cubic-bezier(.165, .84, .44, 1);
+    transition: all .5s cubic-bezier(.165, .84, .44, 1);
+  }
+
+  .line.-none:after {
+    display: none;
+  }
+
+  .line.-white:after,
+  .line.-white:before {
+    background: #fff;
+  }
+
+  .cvBtn {
+    position: relative;
+    overflow: hidden;
+    background: #001833;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  }
+
+  .cvBtn:after,
+  .cvBtn:before {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 50%;
+    content: "";
+  }
+
+  .cvBtn:before {
+    left: 0;
+    background: #003978;
+  }
+
+  .cvBtn:after {
+
+    right: 0;
+    background-color: #00275e;
+  }
+
+  .cvBtn__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+  .cvBtn__list.flex-reverse {
+    flex-direction: row-reverse;
+  }
+  .cvBtn__item {
+    position: relative;
+    z-index: 2;
+  }
+
+  .cvBtn__item:before {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    background-position: center center;
+    background-repeat: repeat;
+    content: "";
+    opacity: 1;
+    -webkit-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
+  }
+
+  .cvBtn__item:first-child:before {
+    background-color: #004697;
+    background-image: url(https://www.shinkawa.co.jp/top/assets/img/logo-bg-light.jpg);
+    background-size: 120px auto;
+  }
+
+  .cvBtn__item:last-child:before {
+    background-color: #003978;
+    background-image: url(https://www.shinkawa.co.jp/top/assets/img/bg.gif);
+  }
+
+  .cvBtn__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+  }
+
+  .cvBtn__title {
+    margin-top: .21429em;
+    font-weight: 500;
+    font-size: 2.8rem;
+    font-family: heebo, sans-serif;
+  }
+
+  .cvBtn__more {
+    margin-top: 2em;
+  }
+
+  @media screen and (min-width:769px) {
+  }
+    .cvBtn__summary {
+      line-height: 1.85;
+    }
+
+    .more.-btn {
+      -webkit-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+      -webkit-transition-property: border, color, background, -webkit-box-shadow;
+      transition-property: border, color, background, -webkit-box-shadow;
+      transition-property: border, color, background, box-shadow;
+      transition-property: border, color, background, box-shadow, -webkit-box-shadow;
+    }
+
+    .more.-btn:hover {
+      border-color: #fff;
+      background: #fff;
+      -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+    }
+
+    .more__icn {
+      top: 0;
+      margin-left: .46154em;
+      width: 6px;
+      height: 9px;
+    }
+
+    .-arw .more__icn {
+      width: 13px;
+      height: 13px;
+    }
+
+    .more:focus .more__icn:after,
+    .more:hover .more__icn:after,
+    a:focus .more .more__icn:after,
+    a:hover .more .more__icn:after {
+      -webkit-animation: arw 1s cubic-bezier(.78, .07, 0, 1) alternate;
+      animation: arw 1s cubic-bezier(.78, .07, 0, 1) alternate;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    .more:focus.-alpha,
+    .more:hover.-alpha,
+    a:focus .more.-alpha,
+    a:hover .more.-alpha {
+      background: rgba(255, 255, 255, .3);
+    }
+
+    .line:focus:before,
+    .line:hover:before,
+    a:focus .line:before,
+    a:hover .line:before {
+      -webkit-transition: transform .5s .1s cubic-bezier(.165, .84, .44, 1);
+      -webkit-transition: -webkit-transform .5s .1s cubic-bezier(.165, .84, .44, 1);
+      transition: -webkit-transform .5s .1s cubic-bezier(.165, .84, .44, 1);
+      transition: transform .5s .1s cubic-bezier(.165, .84, .44, 1);
+      transition: transform .5s .1s cubic-bezier(.165, .84, .44, 1), -webkit-transform .5s .1s cubic-bezier(.165, .84, .44, 1);
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+
+    .line:focus:after,
+    .line:hover:after,
+    a:focus .line:after,
+    a:hover .line:after {
+      -webkit-transition: transform .5s .6s cubic-bezier(.165, .84, .44, 1);
+      -webkit-transition: -webkit-transform .5s .6s cubic-bezier(.165, .84, .44, 1);
+      transition: -webkit-transform .5s .6s cubic-bezier(.165, .84, .44, 1);
+      transition: transform .5s .6s cubic-bezier(.165, .84, .44, 1);
+      transition: transform .5s .6s cubic-bezier(.165, .84, .44, 1), -webkit-transform .5s .6s cubic-bezier(.165, .84, .44, 1);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    .line.-none:hover:before,
+    a:hover .line.-none:before {
+      left: 0;
+      width: 100%;
+      transition: all .5s cubic-bezier(.165, .84, .44, 1);
+      transform: translateX(0);
+    }
+
+    .cvBtn:after,
+    .cvBtn:before {
+      top: 0;
+      height: 100%;
+    }
+
+    .cvBtn__item {
+      width: 50%;
+      height: 30.76923em;
+    }
+
+    .cvBtn__item:hover:first-child:before {
+      opacity: .42;
+    }
+
+    .cvBtn__item:hover:last-child:before {
+      opacity: .5;
+    }
+
+    .cvBtn__item:before {
+      top: 0;
+      height: 100%;
+    }
+
+    .cvBtn__summary {
+      margin-top: .92308em;
+      text-align: center;
+    }
+
+  @media screen and (max-width:768px) {
+  }
+
+    .cvBtn__summary {
+      line-height: 1.65;
+    }
+
+    .more__icn {
+      top: 0;
+      margin-left: 5px;
+      width: 4px;
+      height: 7px;
+    }
+
+    .-arw .more__icn {
+      width: 12px;
+      height: 12px;
+    }
+
+    .cvBtn:after,
+    .cvBtn:before {
+      bottom: 0;
+      height: 101%;
+    }
+
+    .cvBtn__list {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .cvBtn__item {
+      // width: 100%;
+      height: 46vh;
+    }
+
+    .cvBtn__item:before {
+      bottom: 0;
+      height: 110%;
+    }
+
+    .cvBtn__item:first-child {
+      // display: none;
+    }
+
+    .cvBtn__inner {
+      height: 46vh;
+      text-align: center;
+    }
+
+    .cvBtn__desc {
+      position: relative;
+      font-weight: 700;
+      font-size: 1.9rem;
+    }
+
+    .cvBtn__desc:after {
+      display: inline-block;
+      margin-left: 6px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #ed338f;
+      background-image: url(https://www.shinkawa.co.jp/top/assets/img/arw-w.svg);
+      background-size: 100% 100%;
+      content: "";
+    }
+
+    .cvBtn__title {
+      display: none;
+    }
+
+    .cvBtn__summary {
+      margin-top: .83333em;
+      font-size: 1.2rem;
+      opacity: .75;
+    }
+
+    .cvBtn__more {
+      // display: none;
+    }
+
+
+/*! CSS Used keyframes */
+@-webkit-keyframes arw {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  50.01% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes arw {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  50.01% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
