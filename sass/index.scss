@@ -181,6 +181,7 @@ body.index .page-title-item em {
   & > li {
     // margin-top: 20px;
     height: 200px;
+    width: 100%;
     &.top__select__inner {
       margin-bottom: 20px;
     }
@@ -388,7 +389,7 @@ $header-height: 8vh;
 .section3 {
   // background-color: $dark-green;
   @include gradient-green;
-  
+
   padding: $base-size * 0.5 0;
   color: #fff;
   margin-bottom: 0;
@@ -652,9 +653,9 @@ $footer-top-height: 300px;
       color: $color-red;
       &::before {
         @include animation(
-            $name: dotanim,
-            $iteration-count: infinite,
-            $duration: 2s
+          $name: dotanim,
+          $iteration-count: infinite,
+          $duration: 2s
         );
         animation-name: dotanim;
         position: absolute;

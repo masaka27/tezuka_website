@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 /* トップ
 ------------------------------------*/
 if ($('body#top').size()) {
@@ -74,8 +76,6 @@ $(document).ready(function () {
   });
 });
 
-
-
 //TOPへ戻るボタン
 (function ($) {
   const pagetop = $('#pageTop');
@@ -84,3 +84,75 @@ $(document).ready(function () {
     return false;
   });
 })(jQuery);
+
+/* gsap
+------------------------------------*/
+//fade-animation
+const fade = gsap.utils.toArray('.fade');
+fade.forEach((act, i) => {
+  ScrollTrigger.create({
+    trigger: act,
+    toggleClass: 'active',
+    start: 'top 80%',
+    // end: 'bottom top',
+    markers: false,
+    once: true,
+    // toggleActions: 'play none none none'
+  });
+});
+
+//slide-animation
+const reverl = gsap.utils.toArray('.cover-slide-txt');
+reverl.forEach((txt, i) => {
+  ScrollTrigger.create({
+    trigger: txt,
+    toggleClass: 'active',
+    start: 'top 80%',
+    end: 'bottom top',
+    markers: false,
+    once: true,
+    // toggleActions: 'play none none none'
+  });
+});
+//entry-animation
+gsap.to('#footerEntryBtn', {
+  scrollTrigger: {
+    trigger: '.entry-trigger',
+    start: 'top center',
+    end: 'bottom 100%',
+    // toggleClass: 'active',
+    toggleActions: 'play pause resume reset', // スクロールを戻したらもう一度開始させる
+    markers: false,
+  },
+  right: '45px',
+});
+
+// 縦組みanimations
+Splitting();
+// gsap.to('.lr-text-anim', {
+//   scrollTrigger: {
+//     trigger: '.lr-text-anim',
+//     start: 'top 80%',
+//     end: 'bottom top',
+//     toggleClass: 'active',
+//     // toggleActions: 'play pause resume reset', // スクロールを戻したらもう一度開始させる
+//     markers: false,
+//     once: true,
+//   },
+//   right: '45px',
+// });
+
+
+
+const scrollTxt = gsap.utils.toArray('.lr-text-anim');
+scrollTxt.forEach((scr, i) => {
+  ScrollTrigger.create({
+    trigger: scr,
+    toggleClass: 'active',
+    start: 'top 80%',
+    end: 'bottom top',
+    markers: false,
+    once: true,
+    // toggleActions: 'play none none none'
+  });
+});
